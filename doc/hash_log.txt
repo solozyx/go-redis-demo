@@ -1,0 +1,39 @@
+
+127.0.0.1:6379> hget lottery:remain:userid_0 2
+(nil)
+127.0.0.1:6379>
+
+
+PONG <nil>
+user_2 cache user remain not exist
+Process finished with exit code 0
+
+
+127.0.0.1:6379> hset lottery:remain:userid_0 2 -10
+(integer) 1
+127.0.0.1:6379> hget lottery:remain:userid_0 2
+"-10"
+127.0.0.1:6379>
+
+PONG <nil>
+GetUserRemain get user_2 remain=-10
+Process finished with exit code 0
+
+127.0.0.1:6379> hset lottery:remain:userid_0 1 -5
+(integer) 1
+127.0.0.1:6379> hset lottery:remain:userid_0 3 -15
+(integer) 1
+127.0.0.1:6379> hset lottery:remain:userid_0 4 8
+(integer) 1
+127.0.0.1:6379>
+127.0.0.1:6379> hgetall lottery:remain:userid_0
+1) "2"
+2) "-10"
+3) "1"
+4) "-5"
+5) "3"
+6) "-15"
+7) "4"
+8) "8"
+127.0.0.1:6379>
+

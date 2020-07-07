@@ -1,0 +1,11 @@
+
+balance:order:queue
+
+lpush balance:order:queue 1
+lpush balance:order:queue 2
+lpush balance:order:queue 3
+
+keys *
+hset lottery:remain:userid_0 1 0
+hget lottery:remain:userid_0 1
+

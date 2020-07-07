@@ -1,0 +1,7 @@
+PONG <nil>
+2020/03/03 18:08:53 str[0]=balance:order:queue
+2020/03/03 18:08:53 str[1]={"order_id":"order_1"}
+2020/03/03 18:08:53 str[0]=balance:order:queue
+2020/03/03 18:08:53 str[1]={"order_id":"order_2"}
+
+Process finished with exit code 0
